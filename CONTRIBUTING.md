@@ -29,7 +29,7 @@ src
 ### Setting Up a Local Copy
 
 1. Clone the repo with `git clone https://github.com/thisisrajiraj/rajirajcom-brandsite`
-2. From the folder containing template.json, run npx create-react-app <your-app-name> --template file:.
+2. From the folder containing template.json, run npx create-react-app your-app-name --template file:\.
 3. You now have a site ready that is built form the local template. Run it using "npm start" from <your-app-name> folder.
 4. Make any changes you want in the files inside src or public folder 
 5. Run "rm -rf" to delete the folder created for <your-app-name> in step 2. Redo step 2 to see your changes in action.
