@@ -87,3 +87,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 4. Any embedded image link should be a publicly available URL
 5. Use div with className=quote for quotes
 6. If you want a header image served with the content, add the image with the same name as the txt file to the images folder, and refer to it in articleIndex.js file
+
