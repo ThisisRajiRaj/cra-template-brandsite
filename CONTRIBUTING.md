@@ -29,10 +29,13 @@ src
 ### Setting Up a Local Copy
 
 1. Clone the repo with `git clone https://github.com/thisisrajiraj/rajirajcom-brandsite`
-2. Run `npm` in the root folder that contains package.json.
+2. From the folder containing template.json, run npx create-react-app <your-app-name> --template file:.
+3. You now have a site ready that is built form the local template.
+4. Make any changes you want in the files inside src or public folder 
+5. Run "rm -rf" to delete the folder created for <your-app-name> in step 2. Redo step 2 to see your changes in action.
+5. When you have tested and are ready to go, send a pull request in GitHub.
 
 Once it is done, you can modify any file locally and run `npm start`, `npm test` or `npm build` like you can in a generated project. It will serve the application from the files located in `packages/cra-template/template`.
-
 
 
 _Many thanks to [h5bp](https://raw.githubusercontent.com/facebook/create-react-app/master/CONTRIBUTING.md) for the inspiration with this contributing guide_
