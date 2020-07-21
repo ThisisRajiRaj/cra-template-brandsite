@@ -11,7 +11,7 @@ const Article = ({ match }) => {
   const title = fetchedItem.title;
   const header = fetchedItem.image;
 
-  let image = "/posts/" +header ;
+  let image = (header === null || header === undefined) ? null : "/posts/" + header;
 
   return (
     <div className="blogpost">
