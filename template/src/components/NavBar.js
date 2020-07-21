@@ -11,7 +11,7 @@ export const NavigationBar = () => (
         height="30"
         className="d-inline-block align-top"
         alt="COMPANY BRAND"
-      /> COMPANY BRAND</Navbar.Brand>
+      /> [%REPLACE%]COMPANY BRAND</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">

@@ -68,14 +68,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ## To use this template
-1- Create an empty directory and CD into it
-2- Run "npx create-react-app <app name> --template rajirajcom-brandsite" 
-3- Run npm install
-4- Customize site as described below
-5- Run npm start
+1. Create an empty directory and CD into it
+2. Run "npx create-react-app <app name> --template rajirajcom-brandsite" 
+3. Run npm install
+4. Customize site as described below
+5. Run npm start
 
 ### To customize the site
-1- Open the code in Visual Studio Code. Find and update all instances of [%REPLACE%]
+1. Open the code in Visual Studio Code. Find and update all instances of [%REPLACE%]
 2. Change any of the stock images you want to change. Replace text in post1.txt, post2.txt, and post3.txt
 3. Change the video links in Portfolio.js page
 

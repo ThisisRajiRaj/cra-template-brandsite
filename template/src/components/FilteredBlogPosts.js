@@ -50,7 +50,8 @@ class FilteredBlogPosts extends Component {
         </div>
         <br />
         <Row>
-          {this.state.blogList.getFilteredArticles().map((item) => (
+          {          
+          this.state.blogList.getFilteredArticles().map((item) => (            
             <BlogCard key={item.name} item={item} />
           ))}
         </Row>

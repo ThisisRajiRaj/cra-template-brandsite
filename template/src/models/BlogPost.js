@@ -1,32 +1,30 @@
-
-
 // Data structure representing a single blog post
+
 // Encapsulates logic to deal with a single post
 class BlogPost {
-  constructor(filename) {
-    this.filename = filename;
+
+  // Test helper
+  setFileText(text) {
+    this.filetext = text;
   }
 
-  getWordCount(filename) {
-    const str = this.getArticleText();
-    return Math.round(str.split(" ").length / 300);
+  getMinutesToRead() {    
+    return Math.round(this.filetext.split(/[\r\n\s,]+/).length / 300);
   }
 
   getArticleText() {
-    const file = require(`../posts/${this.filename}.txt`);
-    let result = "";
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = () => {
-      if (rawFile.readyState === 4) {
-        if (rawFile.status === 200 || rawFile.status === 0) {
-          var allText = rawFile.responseText.toString();
-          result = allText;
-        }
-      }
-    };
-    rawFile.send(null);
-    return result;
+    return this.filetext;
+  }
+
+  // Read from the file system
+   async readArticleFile(filename) {
+    try {
+      const respTxt = await fetch(`/posts/${filename}.txt`)
+        .then(response => {return response.text()});
+      this.filetext = respTxt;
+    } catch (error) {
+      this.setFileText("Could not read file: " + error.text());
+    }
   }
 }
 

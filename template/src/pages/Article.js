@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layouts";
-import articles from "../posts/articleIndex";
-import TextReader from "../components/TextFile";
+import articles from "./articleIndex";
+import BlogPostRenderer from "../components/BlogPostRenderer";
 import WebsiteBanner from '../components/WebsiteBanner';
 
 
@@ -11,10 +11,7 @@ const Article = ({ match }) => {
   const title = fetchedItem.title;
   const header = fetchedItem.image;
 
-  let image = null;
-  if (header) {
-    image = require(`../posts/${header}`)
-  }
+  let image = "/posts/" +header ;
 
   return (
     <div className="blogpost">
@@ -24,7 +21,7 @@ const Article = ({ match }) => {
         <p>{(image == null) || <img src={image} alt="alternative source" />}</p>
 
         <br />
-        <div><TextReader name={name} /></div>
+        <div><BlogPostRenderer name={name} /></div>
       </Layout>
       <br/><br/>
     </div>

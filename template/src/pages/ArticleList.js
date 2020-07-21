@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import articles from "../posts/articleIndex";
+import articles from "./articleIndex";
 import WebsiteBanner from "../components/WebsiteBanner";
 import SubscribeBox from '../components/SubscribeBox'
 import FilteredBlogPosts from "../components/FilteredBlogPosts";
