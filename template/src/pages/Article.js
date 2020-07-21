@@ -14,16 +14,13 @@ const Article = ({ match }) => {
   let image = (header === null || header === undefined) ? null : "/posts/" + header;
 
   return (
-    <div className="blogpost">
+    <div className="blogpost pb-5">
       <WebsiteBanner bannerStyle="blogBanner pb-3" title={title} />
       
       <Layout>
-        <p>{(image == null) || <img src={image} alt="alternative source" />}</p>
-
-        <br />
+        <p class="pb-3">{(image == null) || <img src={image} alt="alternative source" />}</p>
         <div><BlogPostRenderer name={name} /></div>
       </Layout>
-      <br/><br/>
     </div>
   );
 };
