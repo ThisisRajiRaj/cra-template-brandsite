@@ -1,6 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# RajiRajcom-Brandsite
+This project is a React-based website template to quickly setup a personal, non-profit, or company website.
+
+## Starting the application
 
 In the project directory, you can run:
 
@@ -27,55 +29,15 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-## To use this template
-1. Create an empty directory and CD into it
-2. Run "npx create-react-app <app name> --template rajirajcom-brandsite" 
-3. Run npm install
-4. Customize site as described below
-5. Run npm start
+## To use Rajiraj-com template to build your site
+1- Create an empty directory and CD into it
+2- Run "npx create-react-app <app name> --template rajirajcom-brandsite" 
+3- Run npm install
+4- Customize site as described below
+5- Run npm start
 
 ### To customize the site
-1. Open the code in Visual Studio Code. Find and update all instances of [%REPLACE%]
+1- Open the code in Visual Studio Code. Find and update all instances of [%REPLACE%]
 2. Change any of the stock images you want to change. Replace text in post1.txt, post2.txt, and post3.txt
 3. Change the video links in Portfolio.js page
 
@@ -87,4 +49,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 4. Any embedded image link should be a publicly available URL
 5. Use div with className=quote for quotes
 6. If you want a header image served with the content, add the image with the same name as the txt file to the images folder, and refer to it in articleIndex.js file
-
