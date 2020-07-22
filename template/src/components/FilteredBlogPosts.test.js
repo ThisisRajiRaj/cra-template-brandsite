@@ -89,7 +89,7 @@ function testYearChange(articles, yearToPick, numberToExpectAfter) {
   // Change year 
   wrapper.find("Dropdown").prop("onSelect")(yearToPick);
 
-  // expect to find just 1 blog card after update
+  // expect to find just specific # of blog cards after update
   wrapper.instance().forceUpdate();
   wrapper.update();
   expect(wrapper.find("Dropdown").text()).toBe(yearToPick);

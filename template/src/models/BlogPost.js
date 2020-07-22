@@ -18,13 +18,10 @@ class BlogPost {
 
   // Read from the file system
    async readArticleFile(filename) {
-    try {
-      const respTxt = await fetch(`/posts/${filename}.txt`)
-        .then(response => {return response.text()});
-      this.filetext = respTxt;
-    } catch (error) {
-      this.setFileText("Could not read file: " + error.text());
-    }
+    this.setFileText(await fetch(`/posts/${filename}.txt`)
+        .then(response => (response.text()))
+        .catch(error => ("Could not read file: " + error.toString()))
+    );
   }
 }
 
