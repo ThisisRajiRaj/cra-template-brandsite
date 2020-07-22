@@ -5,9 +5,10 @@ import BlogPostRenderer from "../components/BlogPostRenderer";
 import WebsiteBanner from "../components/WebsiteBanner";
 
 class Article extends Component {
-  constructor({ match }) {
+  constructor(props) {
     super();
     
+    const match = props.match;
     if (match === undefined ||
       match.params === undefined || 
       match.params.name === undefined) {
@@ -19,7 +20,7 @@ class Article extends Component {
       image: null,
       title: "",
       error: undefined,
-      afterMount: match.params.afterMount
+      renderer: props.renderer
     };
   }
   componentDidMount() {
@@ -46,6 +47,7 @@ class Article extends Component {
 
   render() {
     let content = <p>{this.state.error}</p>;
+    let renderer = this.state.renderer ?? <BlogPostRenderer name={this.state.name}/> ;
     if (this.state.error === undefined) {
       content = 
         <>
@@ -53,8 +55,8 @@ class Article extends Component {
             {this.state.image == null || (
               <img src={this.state.image} alt="alternative source" />
             )}
-        </p>
-        <BlogPostRenderer name={this.state.name} afterMount={this.state.afterMount}/> 
+        </p>        
+        {renderer}
         </>;
     }
     return (
