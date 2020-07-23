@@ -1,7 +1,8 @@
 {
-  "name": "cra-template-rajirajcom-brandsite",
-  "version": "1.0.5",
+  "name": "cra-template-brandsite",
+  "version": "1.0.1",
   "main": "template.json",
+  "repository": "https://github.com/ThisisRajiRaj/cra-template-brandsite",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -35,6 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },  
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
   },
   "author": "Raji Rajagopalan",
   "description": "A template to quickly create an awesome personal or non-profit or small business site."

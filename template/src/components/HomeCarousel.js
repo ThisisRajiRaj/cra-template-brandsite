@@ -5,7 +5,7 @@ import OtherImg from "../assets/otherpics.jpg";
 
 function HomeCarousel() {
     return (
-        <div class="home">
+        <div className="home">
             <Carousel interval={null}>
                 <Carousel.Item>
                     <img
