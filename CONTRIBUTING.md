@@ -7,7 +7,7 @@ Please ask first if somebody else is already working on this or the core develop
 
 Please also provide a test plan, i.e. specify how you verified that your addition works.
 
-### Folder Structure of Create React App
+### Folder Structure of this app
 rajiraj-brandsite is based on ReactJS and was created with create-react-app template.
 
 It has the following structure under folder template/
@@ -28,10 +28,14 @@ src
 
 ### Setting Up a Local Copy
 
-1. Clone the repo with `git clone https://github.com/thisisrajiraj/rajirajcom-brandsite`
-2. From the folder containing template.json, run npx create-react-app your-app-name --template file:\.
+1. Clone the repo with `git clone https://github.com/thisisrajiraj/cra-template-brandsite`
+2. Find the path to template.json in the cloned folder.
+From the folder where you want to create a site based on this template, 
+run 
+`` npx create-react-app your-app-name --template file:\<path_to_template.json> ``
 3. You now have a site ready that is built form the local template. Run it using "npm start" from <your-app-name> folder.
-4. Make any changes you want in the files inside src or public folder 
+4. Make any changes you want in the files inside src or public folder of your 
+cloned repo folder
 5. Run "rm -rf" to delete the folder created for <your-app-name> in step 2. Redo step 2 to see your changes in action.
 5. When you have tested and are ready to go, send a pull request in GitHub.
 

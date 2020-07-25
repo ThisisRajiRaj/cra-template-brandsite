@@ -18,7 +18,7 @@ test("no blog text", async () => {
     })
   );
   const afterMount = (comp) => {
-    expect(fetch).toHaveBeenCalledWith("/posts/noblog.txt");
+    expect(fetch).toHaveBeenCalledWith("/posts/noblog.html");
     expect(comp.state.filedata).toBe("");
   };
   var comp = <BlogPostRendererer name="noblog" afterMount={afterMount} />;
@@ -34,7 +34,7 @@ test("empty blog text", async () => {
     })
   );
   const afterMount = (comp) => {
-    expect(fetch).toHaveBeenCalledWith("/posts/emptyblog.txt");
+    expect(fetch).toHaveBeenCalledWith("/posts/emptyblog.html");
     expect(comp.state.filedata).toBe("hello");
   };
   var comp = <BlogPostRendererer name="emptyblog" afterMount={afterMount} />;
@@ -44,7 +44,7 @@ test("empty blog text", async () => {
 test("error fetching file", async () => {
   fetch.mockImplementationOnce(() => Promise.reject("File not found"));
   const afterMount = (comp) => {
-    expect(fetch).toHaveBeenCalledWith("/posts/filenotfound.txt");
+    expect(fetch).toHaveBeenCalledWith("/posts/filenotfound.html");
     expect(comp.state.filedata).toBe("Could not read file: File not found"); 
   };
   var comp = <BlogPostRendererer name="filenotfound" afterMount={afterMount} />;

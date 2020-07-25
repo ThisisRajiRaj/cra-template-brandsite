@@ -18,7 +18,7 @@ class BlogPost {
 
   // Read from the file system
    async readArticleFile(filename) {
-    this.setFileText(await fetch(`/posts/${filename}.txt`)
+    this.setFileText(await fetch(`/posts/${filename}.html`)
         .then(response => (response.text()))
         .catch(error => ("Could not read file: " + error.toString()))
     );

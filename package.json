@@ -1,6 +1,6 @@
 {
   "name": "cra-template-brandsite",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "template.json",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -35,15 +35,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },  
+  },
   "devDependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2"
   },
   "author": "Raji Rajagopalan",
   "description": "A template to quickly create an awesome personal or non-profit or small business site.",
-  "repository": "https://github.com/ThisisRajiRaj/cra-template-brandsite",  
+  "repository": "https://github.com/ThisisRajiRaj/cra-template-brandsite",
   "homepage": "https://github.com/ThisisRajiRaj/cra-template-brandsite#readme",
-  "keywords":["personal branding","website creation","site setup"],
+  "keywords": [
+    "personal branding",
+    "website creation",
+    "site setup"
+  ],
   "license": "MIT License"
 }
